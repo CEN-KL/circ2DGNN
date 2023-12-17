@@ -1,0 +1,17 @@
+__pycache__/
+data/KGANCDA
+data/MNDR
+data/GMNN2CD
+data/CLCDA
+data/circad
+data/circBase
+log_*
+*.ipynb
+core.*
+# contrast_model/
+*.csv
+
+# these 2 files are too large to push to remote repositories
+data/heterogeneous_graphs/heterographs.bin
+data/heterogeneous_graphs/heterographs_noSim.bin
+data/adj_matrix/14_csc_circ_seq.npz
