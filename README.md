@@ -9,3 +9,13 @@ use anaconda to create the environment: conda install xxx
 - scikit-learn==1.2.2
 - numpy==1.24.3
 - pandas==1.5.3
+
+## Data Description
+Since the whole graph data is too large to store on GitHub, 
+after pulling the code, run:
+- circ_seq_similarity.py
+- disease_semantic_similarity.py
+- data_split.py
+in src directory to generate the whole data.
+
+Finally, open train.py and follow the comments to run the code. ^_^
