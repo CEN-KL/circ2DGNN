@@ -16,6 +16,7 @@ after pulling the code, run:
 - circ_seq_similarity.py
 - disease_semantic_similarity.py
 - data_split.py
+
 in src directory to generate the whole data.
 
 Finally, open train.py and follow the comments to run the code. ^_^
