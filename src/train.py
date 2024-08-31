@@ -82,6 +82,10 @@ parser.add_argument("--fivefold",
 parser.add_argument("--MLPPredictor", 
                     action='store_true', 
                     help='use HeteroMLPPredictor or not')
+parser.add_argument("--k_neg_test", 
+                    type=int, 
+                    default=1, 
+                    help='negative sample partition for test set')
 
 args = parser.parse_args()
 
@@ -104,6 +108,7 @@ logging.info('drop_out: {}'.format(args.dropout))
 logging.info('n_layers: {}'.format(args.n_layers))
 logging.info('n_heads: {}'.format(args.n_heads))
 logging.info('k_neg: {}'.format(args.k_neg))
+logging.info('k_neg_test: {}'.format(args.k_neg_test))
 logging.info('cuda_idx: {}'.format(args.cuda))
 logging.info('comments: {}'.format(args.comments))
 logging.info('log file path: {}'.format(log_path + log_name))

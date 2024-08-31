@@ -107,7 +107,7 @@ for i in range(num_of_pos_edges):
     mask_src[u[i].item()].add(v[i].item())
 
 # neg sampling for test set
-neg_G = construct_neg_graph(G, 1, etype_to_pred, mask_src)
+neg_G = construct_neg_graph(G, args.k_neg, etype_to_pred, mask_src)
 neg_u, neg_v = neg_G.edges(etype=etype_to_pred) 
 neg_eids = np.arange(neg_G.num_edges(etype=etype_to_pred))
 neg_eids = np.random.permutation(neg_eids)
