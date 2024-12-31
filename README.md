@@ -1,5 +1,8 @@
 # circ2DGNN: circRNA-disease Association Prediction via Transformer-based Graph Neural Network
 
+## Paper Link
+https://doi.org/10.1109/TCBB.2024.3488281
+
 ## Requirements
 use anaconda to create the environment: conda install xxx
 - python==3.8.16
